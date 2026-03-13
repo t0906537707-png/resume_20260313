@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>周庭聿 個人履歷</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+}
+
+header h1{
+    margin:5px;
+    color:#333;
+}
+
+header p{
+    color:#777;
+}
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+    color:#444;
+}
+
+ul{
+    padding-left:20px;
+}
+
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+#more{
+    display:none;
+}
+
+.fade{
+    animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container fade">
+
+<header>
+<h1>周庭聿</h1>
+<p>亞洲大學室內設計系學生</p>
+<p>學號：AU114055009</p>
+</header>
+
+<div class="section">
+<h2>個人簡介</h2>
+<p>
+我是一名亞洲大學室內設計系的學生，對於空間設計與創意表達充滿熱情，
+希望未來能在室內設計領域發展，並持續提升自己的設計能力與美感。
+</p>
+
+<p id="more">
+目前正在學習空間規劃、設計概念發想以及電腦繪圖，
+熟悉AutoCAD等設計工具，也喜歡透過手繪與設計練習
+來培養自己的創作能力。
+</p>
+
+<button onclick="showMore()">顯示更多</button>
+</div>
+
+<div class="section">
+<h2>學歷</h2>
+<ul>
+<li>亞洲大學 室內設計學系（在學中）</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>技能</h2>
+<ul>
+<li>室內設計基本概念</li>
+<li>空間規劃與設計發想</li>
+<li>AutoCAD 電腦繪圖</li>
+<li>手繪設計草圖</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>未來目標</h2>
+<p>
+希望未來能成為一名專業的室內設計師，
+透過設計改善空間環境，創造更舒適與美觀的生活空間。
+</p>
+</div>
+
+</div>
+
+<script>
+function showMore(){
+    var moreText = document.getElementById("more");
+
+    if(moreText.style.display === "none"){
+        moreText.style.display = "block";
+    }else{
+        moreText.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
