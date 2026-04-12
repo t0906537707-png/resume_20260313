@@ -128,59 +128,34 @@
 
     <div class="content">
         <div class="section-title">Education & Experience</div>
-<div class="experience-item">
-    <div class="year">2026</div>
-    <div class="info">
-        <h3>亞洲大學 室內設計學系</h3>
-        <p>
-            我是<strong>周庭聿</strong>。對我而言，設計不應只是冰冷的牆面與家具堆疊，而是一場關於<strong>「感官、情感與生活品質」</strong>的深度對話。在我的設計哲學中，<strong>「沉浸式生活體驗」</strong>是核心——我熱衷於在日常中觀察光線在不同質材上的位移，捕捉空間在晨昏交替時產生的細微情緒，並將這些生活中的沉浸瞬間轉化為設計靈感。
-        </p>
-        
-        <div id="more" style="display:none;">
-            </div>
-    </div>
-    <button onclick="showMore()" style="margin-top: 10px; background: #003d5b; color: white;">顯示更多內容</button>
-</div>
-
 <div class="section-title">Skills & Expertise</div>
-<div class="experience-item" style="margin-left: 28px;">
-    <div class="year">專業技能</div>
+<div class="experience-item" style="margin-left: 28px;"> <div class="year">專業技能</div>
     <div class="info" style="padding-left: 20px;">
         <div style="display: flex; align-items: flex-start; margin-bottom: 12px; position: relative;">
             <span style="position: absolute; left: -32px; font-size: 1.1em; width: 25px; text-align: center;">📐</span>
-            <div style="line-height: 1.5;">
-                <strong>繪圖與建模：</strong>熟練使用 AutoCAD 進行二維平面圖與立面圖面繪製。
-            </div>
+            <div style="line-height: 1.5;"><strong>繪圖與建模：</strong>熟練使用 AutoCAD 進行二維平面圖與立面圖面繪製。</div>
         </div>
-
         <div style="display: flex; align-items: flex-start; margin-bottom: 12px; position: relative;">
             <span style="position: absolute; left: -32px; font-size: 1.1em; width: 25px; text-align: center;">💡</span>
-            <div style="line-height: 1.5;">
-                <strong>創意科技：</strong>擅長利用 AI 影像生成進行前期設計概念發想。
-            </div>
+            <div style="line-height: 1.5;"><strong>創意科技：</strong>擅長利用 AI 工具進行前期設計概念發想。</div>
         </div>
-
         <div style="display: flex; align-items: flex-start; position: relative;">
             <span style="position: absolute; left: -32px; font-size: 1.1em; width: 25px; text-align: center;">🏗️</span>
-            <div style="line-height: 1.5;">
-                <strong>實務基礎：</strong>掌握室內設計基本概念、人體工學與材料應用。
-            </div>
+            <div style="line-height: 1.5;"><strong>實務基礎：</strong>掌握室內設計基本概念與人體工學應用。</div>
         </div>
     </div>
 </div>
-</div>
-    </div>
-</div>
 
-<script>
+    </div> </div> <script>
 function showMore() {
     var x = document.getElementById("more");
+    var btn = event.target;
     if (x.style.display === "none") {
         x.style.display = "block";
-        event.target.innerHTML = "隱藏內容";
+        btn.innerHTML = "隱藏內容";
     } else {
         x.style.display = "none";
-        event.target.innerHTML = "顯示更多";
+        btn.innerHTML = "顯示更多內容";
     }
 }
 </script>
